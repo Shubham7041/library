@@ -5,11 +5,24 @@
     <title>Library</title>
   </head>
   <body>
+    <h1 id="heading">My Library</h1>
     <form id="AddBookForm">
-      <input class="AuthorInput" type="text" />
-      <input class="TitleInput" type="text" />
-      <input class="NoOfPage" type="text" />
-      <button id="submitButton" type="submit">Add Book</button>
+      <div id="inputfield">
+        <label>Author's Name: </label>
+        <input class="AuthorInput" type="text" />
+        <label>Title: </label>
+        <input class="TitleInput" type="text" />
+        <label>No. of Pages: </label>
+        <input class="NoOfPage" type="text" />
+      </div>
+      <div id="buttons">
+        <button id="Read" class="button-style" type="button" value="Read">
+          Read
+        </button>
+        <button id="submitButton" class="button-style" type="submit">
+          Add Book
+        </button>
+      </div>
     </form>
     <div id="display"></div>
     <script src="script.js"></script>
