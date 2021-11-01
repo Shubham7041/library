@@ -52,11 +52,11 @@ function load() {
     shelf.appendChild(title);
 
     let author = document.createElement("p");
-    author.innerHTML = book.Author;
+    author.innerHTML = `Author: ${book.Author}`;
     shelf.appendChild(author);
 
     let page = document.createElement("p");
-    page.innerHTML = book.Page;
+    page.innerHTML = `Pages: ${book.Page}`;
     shelf.appendChild(page);
 
     let read = document.createElement("button");
